@@ -1,6 +1,6 @@
-package com.gorim.simpleappointmentsystem.domain.entity;
+package com.gorim.simpleappointmentsystem.appointment.domain;
 
-import com.gorim.simpleappointmentsystem.domain.enums.RolesEnum;
+import com.gorim.simpleappointmentsystem.appointment.domain.enums.RolesEnum;
 import lombok.AllArgsConstructor;
 import lombok.Value;
 

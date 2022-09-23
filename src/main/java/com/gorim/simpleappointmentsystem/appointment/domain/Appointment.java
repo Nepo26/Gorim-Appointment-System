@@ -1,4 +1,4 @@
-package com.gorim.simpleappointmentsystem.domain.entity;
+package com.gorim.simpleappointmentsystem.appointment.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
