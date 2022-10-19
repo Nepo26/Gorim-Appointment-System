@@ -12,9 +12,9 @@ import java.util.Optional;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Client {
 
-    private final ClientId id;
+    private final String id;
 
-    private final User.UserId userId;
+    private final String userId;
 
     @Getter
     private String name;
@@ -31,10 +31,6 @@ public class Client {
     @Getter
     private String phoneNumber;
 
-    @Value
-    public static class ClientId {
-        String value;
-    }
 
     public static Client client(final String id,
                          final String userId,
@@ -44,16 +40,16 @@ public class Client {
                          final LocalDate birthdate,
                          final String phoneNumber
                          ){
-        return new Client( new ClientId(id), new User.UserId(userId), name, associatedProfessionals, cpf, birthdate, phoneNumber );
+        return new Client( id, userId, name, associatedProfessionals, cpf, birthdate, phoneNumber );
     }
 
 
-    public Optional<ClientId> getId() {
-        return Optional.ofNullable(this.id);
+    public String getId() {
+        return this.id;
     }
 
-    public Optional<User.UserId> getUserId(){
-        return Optional.ofNullable(this.userId);
+    public String getUserId(){
+        return this.userId;
     }
 
     public void setName(final String name){

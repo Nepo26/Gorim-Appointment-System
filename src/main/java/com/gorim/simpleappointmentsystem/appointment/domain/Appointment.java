@@ -1,26 +1,49 @@
 package com.gorim.simpleappointmentsystem.appointment.domain;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import org.bson.types.ObjectId;
 
 import java.time.LocalDateTime;
 
-@AllArgsConstructor
 public class Appointment {
-    @Getter
-    final String name;
 
     @Getter
-    final Professional.ProfessionalId professionalId;
+    private final String id;
 
     @Getter
-    final Client.ClientId clientId;
+    private final String name;
 
     @Getter
-    final LocalDateTime datetime;
+    private final String professionalId;
 
-    public static Appointment appointment(final String name, final Professional.ProfessionalId professional, final Client.ClientId client, final LocalDateTime datetime){
-        return new Appointment(name, professional, client, datetime);
+    @Getter
+    private final String clientId;
+
+    @Getter
+    private final LocalDateTime datetime;
+
+    public Appointment(final String name, final String professionalId, final String clientId, final LocalDateTime datetime) {
+        this.id = new ObjectId().toString();
+        this.name = name;
+        this.professionalId = professionalId;
+        this.clientId = clientId;
+        this.datetime = datetime;
+    }
+
+    public Appointment(final String id, final String name, final String professionalId, final String clientId, final LocalDateTime datetime) {
+        this.id = id;
+        this.name = name;
+        this.professionalId = professionalId;
+        this.clientId = clientId;
+        this.datetime = datetime;
+    }
+
+    public static Appointment appointment(final String name, final String professionalId, final String clientId, final LocalDateTime datetime) {
+        return new Appointment(new ObjectId().toString(), name, professionalId, clientId, datetime);
+    }
+
+    public static Appointment appointment(final String id, final String name, final String professionalId, final String clientId, final LocalDateTime datetime) {
+        return new Appointment(id, name, professionalId, clientId, datetime);
     }
 
 }

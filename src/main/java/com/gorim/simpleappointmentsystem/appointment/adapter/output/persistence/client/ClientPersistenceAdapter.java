@@ -1,4 +1,4 @@
-package com.gorim.simpleappointmentsystem.appointment.adapter.output.persistence;
+package com.gorim.simpleappointmentsystem.appointment.adapter.output.persistence.client;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

@@ -12,11 +12,6 @@ public class User {
     final String password;
     final Collection<RolesEnum> roles;
 
-    @Value
-    public static class UserId {
-        String value;
-    }
-
     public static User user(final String username, final String password, final Collection<RolesEnum> roles) {
         return new User(username, password, roles);
     }
