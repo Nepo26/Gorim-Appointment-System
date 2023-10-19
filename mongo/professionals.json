@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "633c32f3587b6149757c8b09"
+  },
+  "userId": {
+    "$oid": "633c3103587b6149757c8afd"
+  },
+  "name": "Marcus Aurelius",
+  "description": "Profissional de nutrição com muitos anos de mercado",
+  "expertise": "nutrição",
+  "openHours": {
+    "sunday": {
+      "start": 420,
+      "end": 1020
+    },
+    "monday": {
+      "start": 420,
+      "end": 1020
+    },
+    "tuesday": {
+      "start": 420,
+      "end": 1020
+    },
+    "wednesday": {
+      "start": 420,
+      "end": 1020
+    },
+    "thursday": {
+      "start": 420,
+      "end": 1020
+    },
+    "friday": {
+      "start": 420,
+      "end": 1020
+    },
+    "saturday": {
+      "start": 420,
+      "end": 1020
+    }
+  },
+  "cpf": "45338687380",
+  "birthdate": {
+    "$date": {
+      "$numberLong": "220935600000"
+    }
+  },
+  "associatedClients": [
+    {
+      "$oid": "633c3650587b6149757c8b13"
+    }
+  ]
+}]

@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "633c3715587b6149757c8b22"
+  },
+  "name": "Consulta de Anamnese",
+  "professionalId": {
+    "$oid": "633c32f3587b6149757c8b09"
+  },
+  "clientId": {
+    "$oid": "633c3650587b6149757c8b13"
+  },
+  "datetime": {
+    "$date": {
+      "$numberLong": "1671937200000"
+    }
+  }
+}]

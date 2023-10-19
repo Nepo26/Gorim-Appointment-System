@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "633c3650587b6149757c8b13"
+  },
+  "userId": {
+    "$oid": "633c32b8587b6149757c8afe"
+  },
+  "name": "Guillermo Del Toro",
+  "associatedProfessionals": [
+    {
+      "$oid": "633c32f3587b6149757c8b09"
+    }
+  ],
+  "cpf": "19924115902",
+  "birthdate": {
+    "$date": {
+      "$numberLong": "255236400000"
+    }
+  },
+  "phoneNumber": "9721311769"
+}]
